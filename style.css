@@ -348,6 +348,134 @@ html {
     margin: 0 10px;
 }
 
+/* Diagram */
+.d_h1 {
+    width: min-content;
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-right: auto;
+}
+
+.d_h1 span {
+    font-weight: 600;
+    color: #46B1DE;
+}
+
+.d_table_box {
+    display: grid;
+    height: 30vw;
+    width: 72vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.25fr 0.25fr 0.5fr 0.5fr 0.25fr 0.25fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+
+.gap1 {
+    grid-area: 1 / 1 / 3 / 5;
+    text-align: right;
+}
+
+.gap2 {
+    grid-area: 3 / 1 / 5 / 4;
+    text-align: right;
+}
+
+.gap3 {
+    grid-area: 5 / 1 / 7 / 6;
+    text-align: right;
+}
+
+.gap_center {
+    grid-area: 2 / 6 / 4 / 8;
+}
+
+.gap_center img {
+    height: auto;
+    width: auto;
+    transform: translate(5%, -10%);
+
+}
+
+.gap_back {
+    grid-area: 1 / 4 / 5 / 10;
+    background-position: center center;
+    background-size: contain;
+    background-image: url(Group2.png);
+    background-repeat: no-repeat
+}
+
+.gap5 {
+    grid-area: 1 / 9 / 3 / 13;
+}
+
+.gap6 {
+    grid-area: 3 / 10 / 5 / 13;
+}
+
+.gap7 {
+    grid-area: 5 / 8 / 7 / 13;
+}
+
+.gap1,
+.gap2,
+.gap3,
+.gap5,
+.gap6,
+.gap7 {
+    height: 112px;
+}
+
+
+
+.d_table_box div span {
+    color: #46B1DE;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+}
+
+.d_table_box div {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.d_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d_text img {
+    margin-right: 16px;
+
+}
+
+.d_text p {
+    white-space: nowrap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #46B1DE;
+}
+
 /* Form */
 .f_bigbox {
     box-sizing: border-box;
@@ -358,7 +486,7 @@ html {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     padding: 10px 9px 8px 15px;
-    margin: 90px auto;
+    margin: 88px auto;
 }
 
 .f_box {
