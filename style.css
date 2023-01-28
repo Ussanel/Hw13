@@ -67,7 +67,7 @@ html {
     justify-content: space-around;
     align-items: flex-start;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    fspanont-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -75,6 +75,10 @@ html {
     color: #1B1D1F;
     height: 19px;
     width: 350px;
+}
+
+.h_box_center span:hover {
+    color: #46b1de;
 }
 
 .h_box_right {
@@ -85,23 +89,47 @@ html {
 }
 
 .h_phone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Sofia Sans', sans-serif;
     white-space: nowrap;
 }
 
-.h_phone img {
+.h_phone a,
+.hm_right a {
+    text-decoration: none;
+    color: black;
+}
+
+.h_phone a::before {
+    content: url(-phone-in-talk_90490\ 1.png);
     margin-right: 5px;
     height: 25px;
     width: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.hm_right a ::before {
+    content: url(-phone-in-talk_90490\ 1.png);
+    margin-right: 5px;
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .h_bold {
 
     margin-left: 20px;
     font-weight: bold;
+}
+
+.h_bold::after {
+    margin-left: 5px;
+    margin-right: 5px;
+    content: "|";
+    color: black;
+    font-style: bold;
+
 }
 
 /* contant */
@@ -558,6 +586,9 @@ height: 22px; */
     justify-content: center;
     align-items: center;
 }
+.f_btnbox div:hover{
+    border:  #46B1DE 2px solid
+}
 
 .f_btnbox img {
     width: 24px;
@@ -575,6 +606,7 @@ height: 22px; */
 }
 
 .f_btnbox button {
+    border: none;
     width: 180px;
     height: 57px;
     background: #46B1DE;
@@ -587,6 +619,11 @@ height: 22px; */
     text-align: center;
     color: #FFFFFF;
 }
+.f_btnbox button:hover{
+   border: black 2px solid
+}
+
+
 
 /* picture */
 .picture {
@@ -1339,7 +1376,6 @@ height: 22px; */
         font-size: 12px;
         line-height: 14px;
         text-align: center;
-        color: #1B1D1F;
         display: flex;
         justify-content: flex-end;
         align-items: center;
